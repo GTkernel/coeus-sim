@@ -22,14 +22,15 @@ if __name__ == "__main__":
   # Convert to per page access counts
   sim = PerfModel(prof, 'Fast:NearSlow', 'history', 0.2, 35650) # cori's frequency, so that less periods for RNN training
   sim.init()
-  #sim.run()
+  sim.run()
 
   # Get misplaced pages eligible for RNNs.
-  #page_selector = PageSelector(prof, 'Fast:NearSlow', '0.2', 35650, resdir + app_label + '_')
-  #pages_misplaced = page_selector.get_misplaced_pages_sim()
-  #pages_ordered = page_selector.get_ordered_pages(pages_misplaced)
+  page_selector = PageSelector(prof, 'Fast:NearSlow', '0.2', 35650, resdir + app_label + '_')
+  pages_misplaced = page_selector.get_misplaced_pages_sim()
+  pages_ordered = page_selector.get_ordered_pages(pages_misplaced)
   
-  page_id_x = 593
+  # define how many RNNs you want to deploy, i am doing one now.
+  page_id_x = pages_ordered[:1]
   
   ### Make the RNN input
   # Step 1: take the page access count across periods
