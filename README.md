@@ -24,7 +24,7 @@ This repo contains the following code:
 ## Paper references
 - <b>Coeus: Clustering (A)like Patterns for PracticalMachine Intelligent Hybrid Memory Management.</b> <br/>
 Thaleia Dimitra Doudali, Ada Gavrilovska.<br/>
-Under Review.
+In Proceedings of the 22nd IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing (CCGrid 2022).
 
 - <b>Cori: Dancing to the Right Beat of Periodic Data Movements over Hybrid Memory Systems.</b><br/>
 Thaleia Dimitra Doudali, Daniel Zahka, Ada Gavrilovska. <br/>
